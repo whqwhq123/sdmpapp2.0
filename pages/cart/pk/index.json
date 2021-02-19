@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-tabs": "../../../components/vant-weapp/tabs/index",
+    "van-tab": "../../../components/vant-weapp/tab/index",
+    "ec-canvas": "../../../components/ec-canvas/ec-canvas"
+  },
+  "navigationBarTitleText": "车型对比"
+}

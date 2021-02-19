@@ -1,0 +1,141 @@
+.page_body {
+  width: 100%;
+  box-sizing: border-box;
+  color: #444c79;
+}
+
+.atg_content {
+  width: 100%;
+  padding-bottom: 135rpx;
+  box-sizing: border-box;
+}
+
+.atg_head {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx 30rpx 10rpx 30rpx;
+  display: flex;
+  display: -webkit-flex;
+  display: -webkit-inline-flex;
+}
+
+.parallelogram {
+  width: 200rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+  line-height: 60rpx;
+  transform: skew(-30deg);
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  color: #333;
+  text-align: center;
+  border: 1rpx dashed #444c79;
+}
+
+.atg_act {
+  background-color: #444c79;
+  color: #fff;
+  border: none;
+}
+
+.van-tab__text {
+  color: #444c79;
+}
+
+.van-tabs__content {
+  width: 100%;
+  min-height: 70vh;
+  box-sizing: border-box;
+  padding: 30rpx 0;
+  overflow-x: hidden;
+}
+
+.van-tabs__wrap {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 88rpx;
+  background: #fff !important;
+  z-index: 9;
+}
+
+/* 排行 */
+.atg_ranking {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  display: flex;
+  display: -webkit-flex;
+  display: -webkit-inline-flex;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+
+.atg_cart_ranking {
+  width: 139rpx;
+}
+
+.atg_cart_ranking image {
+  display: inline-block;
+  width: 117rpx;
+  height: 100rpx;
+  text-align: center;
+}
+
+.atg_cart_name {
+  width: 120rpx;
+  white-space: nowrap;
+  /*控制单行显示*/
+  overflow: hidden;
+  /*超出隐藏*/
+  text-overflow: ellipsis;
+  /*隐藏的字符用省略号表示*/
+  word-break: break-all;
+}
+
+.atg_cart_bar {
+  flex: 1;
+  position: relative;
+  padding: 0 30rpx;
+  text-align: left;
+  overflow: hidden;
+}
+
+.atg_cart_bar text {
+  display: inline-block;
+  height: 30rpx;
+  background: #444c79;
+}
+
+.atg_cart_percentage {
+  width: 80rpx;
+  font-size: 24rpx;
+  text-align: right;
+}
+
+.contrast_btn {
+  width: 80%;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  background: #444c79;
+  border-radius: 88rpx;
+  position: fixed;
+  bottom: 50rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.van-icon {
+  font-size: 30rpx !important;
+  vertical-align: middle;
+  margin-right: 8rpx;
+}

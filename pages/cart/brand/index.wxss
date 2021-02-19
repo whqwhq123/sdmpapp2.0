@@ -1,0 +1,6 @@
+/* pages/cart/carStyle/brand.wxss */
+.brand {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+}

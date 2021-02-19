@@ -1,0 +1,6 @@
+<!--pages/cart/carStyle/brand.wxml-->
+<view class="car">
+    <view class="box">
+        <view class="brand" wx:for="{{autoLogos}}" wx:for-item="item" wx:key="index" bindtap="brandRouter" data-name="{{item}}">{{item}}</view>
+    </view>
+</view>

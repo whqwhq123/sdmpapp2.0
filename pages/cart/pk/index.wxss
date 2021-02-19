@@ -1,0 +1,77 @@
+.pk {
+  overflow-x: scroll;
+  white-space: nowrap;
+  border: 1rpx solid #eee;
+  line-height: 70rpx;
+}
+
+.pk_content {
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1rpx solid #eee;
+  width: 270rpx;
+  height: 470rpx;
+}
+
+.pk_car {
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  padding-left: 20rpx;
+}
+
+.pk_tag {
+  padding: 20rpx;
+}
+
+.pk_tag text {
+  display: block;
+}
+
+.radio {
+  font-size: 27rpx;
+  padding: 30rpx 0;
+  padding-left: 20rpx;
+}
+
+.chart_show {
+  width: 100vw;
+  height: 650rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  line-height: 40rpx;
+  font-weight: bold;
+}
+
+.tag {
+  font-size: 25rpx;
+  overflow-x: scroll;
+  line-height: 60rpx;
+  padding: 30rpx;
+  white-space: nowrap;
+}
+
+.tag_content {
+  border: 1rpx solid #eee;
+  text-align: center;
+  border-radius: 5rpx;
+  display: inline-block;
+  padding: 0 35rpx;
+  line-height: 60rpx;
+  margin-right: 20rpx;
+  position: relative;
+}
+
+.tag_content text {
+  display: block;
+  position: absolute;
+  top: -15rpx;
+  right: 3rpx;
+  font-size: 26rpx;
+}
+
+.show_chart {
+  height: 650rpx;
+}

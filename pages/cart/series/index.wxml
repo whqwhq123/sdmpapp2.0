@@ -1,0 +1,18 @@
+<!--pages/cart/carStyle/series.wxml-->
+<view class="car">
+	<view class="btn">
+		<van-button round size="small" plain type="info" bindtap="routerPush">+添加车系</van-button>
+	</view>
+	<view wx:if="checkArr.length!=0" class="car_list">
+		<view wx:for="{{checkArr}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+			<van-checkbox value="{{ item.bCheckout }}" bind:change="getcar" data-item="{{item}}" icon-size="20px">{{item.bname}} {{item.pname}}</van-checkbox>
+		</view>
+	</view>
+	<view class="cleass">同级推荐</view>
+	<view wx:for="{{contendList}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+		<van-checkbox value="{{ item.bCheckout }}" bind:change="getcars" data-item="{{item}}" icon-size="20px">{{item.pname}}</van-checkbox>
+	</view>
+	<view class="bottom">
+		<van-button size="small" plain type="info" bindtap="isPk">马上PK</van-button>
+	</view>
+</view>
