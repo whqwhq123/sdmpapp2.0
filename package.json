@@ -1,0 +1,19 @@
+{
+  "name": "sdmp_2.0_mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.5.3",
+    "weui-miniprogram": "^1.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@192.168.100.243:4399/webProduct/App/sdmp_2.0_mini.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

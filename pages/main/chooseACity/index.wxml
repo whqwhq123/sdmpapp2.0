@@ -1,0 +1,15 @@
+<view class="pageBody">
+  <mp-navigation-bar title="选择城市" background="#fff"></mp-navigation-bar>
+  <view class="chooseAcity">当前定位城市</view>
+  <view class="chooseAcityName">
+    <image class="addressIcon" src="{{oss_url}}/address_icon.png"></image>
+    {{currentCity}}
+  </view>
+  <van-index-bar highlight-color="#FA5151">
+    <view class="indexListStyle" wx:for="{{citysData}}" wx:key="index" wx:for-item="value">
+      <van-index-anchor index="{{value.letter}}">{{item.cityPrefix}}</van-index-anchor>
+      <view wx:for="{{value.city}}" wx:key="index2" wx:for-item="value2" class="listItem {{value2.nameCity == currentCity ? 'hover' : ''}}" bindtap="selectCity"
+        data-city="{{value2.nameCity}}">{{value2.nameCity}}</view>
+    </view>
+  </van-index-bar>
+</view>

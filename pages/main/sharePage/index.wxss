@@ -1,0 +1,61 @@
+page{
+  background: #1a1a1a;
+}
+
+.sell_banner{
+  width: 67.46vw;
+  height: 64.8vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.share{
+  text-align: center;
+  width: 84vw;
+  height: 11.2vw;
+  line-height: 11.2vw;
+  color: #fff;
+  font-size: 4.26vw;
+  background: #BB0A30;
+  border: 0.26vw solid #BB0A30;
+  margin: 0 auto;
+  border-radius: 5.33vw;
+  margin-top: 6.13vw;
+}
+
+.go_back{
+  text-align: center;
+  width: 84vw;
+  height: 11.2vw;
+  line-height: 11.2vw;
+  color: #BB0A30;
+  font-size: 4.26vw;
+  border: 0.26vw solid #BB0A30;
+  margin: 0 auto;
+  border-radius: 5.33vw;
+  margin-top: 5.33vw;
+}
+
+.sell_title{
+  color: #E8CDAA;
+  font-size: 5.33vw;
+  text-align: center;
+  line-height: 8vw;
+}
+
+.top{
+  padding: 50rpx 0;
+  box-sizing: border-box;
+}
+canvas{
+ position: fixed;
+  top: 0;
+  left: 999px;
+}
+.card_loading{
+  font-size:14px;
+  color:#fff;
+  text-align:center;
+  margin-top:200px;
+
+}

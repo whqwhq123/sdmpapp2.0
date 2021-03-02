@@ -1,0 +1,116 @@
+.gift_title {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  height: 32rpx;
+  padding-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.gift_time {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 28rpx;
+  padding-bottom: 20rpx;
+}
+
+.gift_address {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 28rpx;
+  color: #A5A4BF;
+}
+
+.top {
+  padding: 30rpx 40rpx;
+  border-bottom: 11rpx solid #F5F6FA
+}
+
+.form {
+  display: flex;
+  color: #43425D;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #F5F6FA;
+  padding: 0 30rpx;
+}
+
+.form_left {
+  width: 50%;
+  font-weight: 400;
+}
+
+.form_right {
+  width: 50%;
+  font-size: 30rpx;
+  text-align: right;
+}
+
+.form_right input {
+  height: 90rpx;
+  line-height: 90rpx;
+  display: block;
+  text-align: left;
+  width: 200rpx;
+  padding-left: 145rpx;
+}
+
+.get_phone {
+  height: 90rpx;
+  line-height: 90rpx;
+  display: block;
+  text-align: left;
+  padding-left: 157rpx;
+  background: #fff;
+}
+
+.form_right image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-top: -7rpx;
+}
+
+.form_num {
+  display: inline-block;
+  width: 90rpx;
+  text-align: center;
+}
+
+.remark {
+  color: #43425D;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  padding: 0 30rpx;
+}
+
+.remark textarea  {
+  width: 670rpx;
+  color: #A5A4BF;
+  font-size: 30rpx;
+  display: block;
+  line-height: 42rpx;
+  padding: 0 10rpx;
+}
+
+.submit {
+  width: 750rpx;
+  height: 126rpx;
+  background: #FFFFFF;
+  box-shadow: 6rpx 0 20rpx rgba(158, 161, 171, 0.09);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.join {
+  width: 670rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  background: linear-gradient(90deg, #F02529 0%, #F02529 100%);
+  border-radius: 50vw;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+}

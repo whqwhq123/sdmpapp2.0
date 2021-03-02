@@ -1,0 +1,26 @@
+<view class="join">
+  <button open-type="share" class="join_left">分享</button>
+  <view class="join_right_no" wx:if="{{content['signUpStatus'] == 1}}">已报名</view>
+  <view class="join_right_no" wx:elif="{{end == 1}}">已结束</view>
+  <view class="join_right" bindtap="join_gift" wx:else>报名</view>
+</view>
+<mp-navigation-bar title="活动详情" back="{{back}}" background="#fff"></mp-navigation-bar>
+<view class="top">
+  <view class="banner">
+    <swiper class="nearby-shop-swiper" wx:if="{{content['swiper'].length > 0}}">
+      <swiper-item wx:for="{{content['swiper']}}" wx:key="index" wx:for-item="value">
+        <image src="{{value}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="gift">
+    <view class="gift_title">{{content['activityName']}}</view>
+    <view class="gift_time">{{content['startTime']}}至{{content['endTime']}}</view>
+    <view class="gift_address">{{content['activityCity']}}{{content['activityArea']}}{{content['areaDetail']}}</view>
+  </view>
+</view>
+<view class="content">
+  <rich-text nodes="{{content['activityContent']}}"></rich-text>
+</view>
+<view class="block_bottom"></view>
+<rigth-operate top="{{isOperate}}" />

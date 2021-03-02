@@ -1,0 +1,189 @@
+.main {
+  background: no-repeat;
+  background-size: 750rpx 392rpx;
+}
+
+.top {
+  padding: 40rpx 40rpx 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .carimg {
+  width: 180rpx;
+  height: 116rpx;
+  border-radius: 8rpx;
+}
+
+.top .right {
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.top view {
+  color: white;
+  font-size: 28rpx;
+}
+
+.policy {
+  font-size: 25rpx;
+  color: #43425D;
+  opacity: 0.5;
+  padding: 15rpx 25rpx;
+}
+
+.policy text {
+  color: #3B86FF;
+}
+
+.weui-label {
+  width: 120rpx;
+  font-size: 18rpx;
+  color: #43425D
+}
+
+.weui-select {
+  font-size: 30rpx;
+}
+
+.weui-input {
+  font-size: 28rpx;
+}
+
+.weui-cell {
+  padding: 15rpx;
+}
+
+.user-wrap {
+  width: 600rpx;
+  border-bottom: 0.5rpx solid #D7D7E9;
+  margin: 0 20rpx;
+}
+
+.user-wrap:last-child {
+  height: 45rpx;
+  line-height: 45rpx;
+}
+
+.genter {
+  display: flex;
+}
+
+.genter text {
+  display: block;
+  background: #F2F2F2;
+  width: 96rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  text-align: center;
+  margin-left: 20rpx;
+}
+
+.genter .active {
+  background: #FFEDED;
+  color: #FA5151;
+}
+
+.form-box {
+  width: 670rpx;
+  height: 392rpx;
+  margin-top: -50rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 6px rgba(158, 161, 171, 0.09);
+  border: 1rpx solid white;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40rpx;
+  padding: 20rpx 0;
+}
+
+.dealer-wrap {
+  color: #43425D;
+  border-bottom: 0.5rpx solid #D7D7E9;
+  padding: 20rpx 50rpx;
+}
+
+.dealer-wrap .subtitle {
+  margin-top: 6rpx;
+  font-size: 20rpx;
+  margin-left: 50rpx;
+}
+
+.ask-price-btn {
+  width: 100%;
+  height: 220rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: white;
+  z-index: 999;
+}
+
+.ask-price-btn .button {
+  width: 670rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  margin: 0 auto;
+  border-radius: 49rpx;
+  background: linear-gradient(90deg, #F02529 0%, #FA564C 100%);
+  color: white;
+  font-size: 34rpx;
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+.wrapper {
+  width: 80%;
+  height: 90%;
+  background: white;
+  float: right;
+  margin-top: 18%;
+}
+
+.wrapper .content {
+  padding: 30rpx;
+}
+
+.wrapper .content .car-item {
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #D7D7E9;
+}
+
+.wrapper .content .car-item view {
+  display: flex;
+  font-size: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .content .car-item:hover {
+  background: #F5F6FA
+}
+
+.weui-checkbox {
+  align-items: flex-start;
+}
+
+.form-right,
+.weui-label {
+  font-size: 28rpx;
+  color: #43425D;
+}
+
+.select_city .weui-select,
+.select_city .weui-select_in-select-after,
+.select_city .weui-cell,
+.select_city .weui-cell_select {
+  padding: 0;
+  margin: 0;
+}
+
+.weui-cell__hd {
+  margin-top: -7rpx;
+}

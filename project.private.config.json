@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "分享",
+          "pathName": "pages/main/sharePage/shareActivity/index",
+          "query": "scene=1,150,1067,ACT000001",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

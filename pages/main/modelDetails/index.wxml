@@ -1,0 +1,45 @@
+<view class="pageBody">
+  <mp-navigation-bar title="车型详情" background="#fff"></mp-navigation-bar>
+  <view class="carBox">
+    <image class="carImg" src="{{car_info['ossUrl']}}"></image>
+    <view class="carInfo">
+      <view class="carName">{{car_info['saleCarTitle']}}</view>
+      <view class="carPrice">经销商售价：28.98万</view>
+      <view class="carOriginalPrice">厂商指导价：<text>{{car_info['vendorPrice']}}万</text></view>
+
+    </view>
+  </view>
+
+  <view class="gift" wx:for="{{list_gift}}" wx:key="index" wx:for-item="value">
+    <swiper class="nearby-shop-swiper" wx:if="{{value['swiper'].length > 0}}" bindtap="to_show"
+      data-id="{{value['activityId']}}">
+      <swiper-item wx:for="{{value['swiper']}}" wx:key="index_swiper" wx:for-item="value_swiper">
+        <image src="{{value_swiper}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="dealerList_box">
+    <view class="dealer_tit">
+      <view>经销商</view>
+      <view class="chooseAcityName">
+        <image class="addressIcon" src="{{oss_url}}/address_icon.png"></image>
+        {{city}}
+      </view>
+    </view>
+    <block wx:for="{{list_dealer}}" wx:key="index" wx:for-item="value">
+      <view class="dealer_box">
+        <view class="dealerName">{{value['deptName']}}</view>
+        <view class="dealerAddress">
+          {{value['nameProvince'] || ''}}{{value['nameCity'] || ''}}{{value['nameArea'] || ''}}{{value['companyAddr'] || ''}}</view>
+        <view class="btnBox">
+          <view class="btn btn_left" bindtap="make_phone" data-phone="{{value.companyPhone}}">
+            <image class="telIcon" src="{{oss_url}}/tel_icon.png"></image>拨打
+          </view>
+          <view class="btn btn_rigth" bindtap="make_train" data-trainid='{{value}}'>询底价</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <rigth-operate top="{{isOperate}}" />
+</view>

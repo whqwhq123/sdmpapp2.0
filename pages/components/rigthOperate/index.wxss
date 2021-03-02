@@ -1,0 +1,14 @@
+/* pages/components/rigthOperate/index.wxss */
+.rigthOperate {
+  width: 100rpx;
+  position: fixed;
+  right: 5%;
+  /* bottom: 5%; */
+  bottom: 10%;
+  z-index: 9999;
+}
+
+.iconImg {
+  width: 100rpx;
+  height: 100rpx;
+}

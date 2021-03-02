@@ -16,7 +16,7 @@ function getHeader(isToken) {
   // const userMsg = wx.getStorageSync('userMsg')
 
   let header = {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/x-www-form-urlencoded'
   }
 
   if (isToken) {
@@ -58,7 +58,7 @@ const http = ({
   }
   return new Promise((resolve, reject) => {
     wx.request({
-      url: `${ other.baseUrl || helper.baseAPI }${ url }`,
+      url: `${ other.baseUrl || helper.interface_url }${ url }`,
       header: getHeader(isToken),
       data,
       ...other,
@@ -90,7 +90,6 @@ const http = ({
           title: '网络错误',
           icon: "none"
         })
-        console.log(res)
         reject({
           error: '网络错误',
           code: 0
@@ -174,3 +173,19 @@ module.exports = {
   _delete,
   wxPromisify
 }
+
+
+/**
+ * 获取formId
+ * 
+ */
+// const getFormId = (datas) => {
+// 	let options = {
+// 		baseUrl: helper.wxServiceUrl,
+// 		header: {
+// 			'content-type': 'application/x-www-form-urlencoded' // 表单提交
+// 		},
+//   }
+  
+//   return http._post(`/wxFormId/save`, datas, false, false, options);
+// }

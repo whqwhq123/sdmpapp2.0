@@ -1,0 +1,21 @@
+<view class="pageBody">
+  <mp-navigation-bar title="经销商" background="#fff"></mp-navigation-bar>
+  <view class="chooseAcityName" bindtap="to_location">
+    <image class="addressIcon" src="{{oss_url}}/address_icon.png"></image>
+    {{city}}
+  </view>
+  <block wx:for="{{list_dealer}}" wx:key="index" wx:for-item="value">
+    <view class="dealer_box">
+      <image class="dealerImg" src="{{oss_url}}/dealer.png"></image>
+      <view class="dealer_info">
+        <view class="dealerName">{{value['deptName']}}</view>
+        <view class="dealerTel" bindtap="make_phone" data-phone="{{value['companyPhone']}}">
+          <!-- {{value['companyPhone']}} -->
+          400-808-6931
+          <image class="telIcon" src="{{oss_url}}/tel_icon.png"></image>
+        </view>
+        <view class="dealerAddress">{{value['nameProvince'] ? value['nameProvince'] : ''}}{{value['nameCity'] ? value['nameCity'] : ''}}{{value['nameArea'] ? value['nameArea'] : ''}}{{value['companyAddr'] ? value['companyAddr'] : ''}}</view>
+      </view>
+    </view>   
+  </block>
+</view>

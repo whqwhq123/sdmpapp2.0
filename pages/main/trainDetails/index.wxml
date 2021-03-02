@@ -1,0 +1,79 @@
+<view class="pageBody">
+  <view class="imgBox">
+    <van-image fit="cover" width="100%" height="244" src="{{ossUrl}}" />
+    <view class="share">
+      <image bindtap="shareClick" class="addressIconsty2" src="{{oss_url}}/share2.png"></image>
+    </view>
+    <view class="chooseAcityName" bindtap="addressClick">
+        <image class="addressIcon" src="{{oss_url}}/zuobiao.png"></image>
+        <text class="addressName" >{{city}}</text> 
+    </view>
+  </view>
+  <view class="keyWordBox clearfix">
+    <view class="keyWordBox_toptit">参考价：{{price}}万/{{carStyle}}</view>
+    <!-- <view class="keyWordBox_wordSty">加速快</view>
+    <view class="keyWordBox_wordSty">储存空间很多</view>
+    <view class="keyWordBox_wordSty">储存空很多</view>
+    <view class="keyWordBox_wordSty">储存空间很多</view> -->
+  </view>
+  <view class="stateBox">
+    <van-row>
+      <van-col span="6" offset="4" style="text-align: center;" bindtap="to_gift">
+        <image class="addressIcon2" src="{{oss_url}}/activitiesicon.png"></image>
+        <view class="stateBox_tit">活动有礼</view>
+      </van-col>
+      <van-col span="6" offset="4" style="text-align: center;" bindtap="dealersList">
+        <image class="addressIcon2" src="{{oss_url}}/distributoricon.png"></image>
+        <view class="stateBox_tit">经销商</view>
+      </van-col>
+    </van-row>
+  </view>
+  <block wx:for="{{list_gift}}" wx:key="index" wx:for-item="value" bindtap="to_show" data-id="{{value['activityId']}}"
+    wx:if="{{value['swiper'].length > 0}}">
+    <view class="gift">
+      <swiper class="nearby-shop-swiper" bindchange="swiperChange">
+        <swiper-item wx:for="{{value['swiper']}}" wx:key="index_swiper" wx:for-item="value_swiper" bindtap="to_show"
+          data-id="{{value['activityId']}}">
+          <image src="{{value_swiper}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <swiper-dot dotLength="{{list_gift.length}}" activeIndex="{{currentIndex}}" style="margin-top: -30rpx;">
+    </swiper-dot>
+  </block>
+  <view class="navbar-wrap">
+    <view class="column {{isFixedTop?'fixed':''}}" id="navbar">
+      <view class="modelsSale_tit">在售车型</view>
+    </view>
+    <!-- 用于吸顶后 -->
+    <view class="column" wx:if="{{isFixedTop}}"></view>
+  </view>
+
+  <view class="modelsSale_box">
+    <view class="modelsSale_sty1">1.5L/95kw 自然吸气</view>
+    <view class="modelsSale_sty2" wx:for="{{carStyleData}}" bindtap="modelsSaleClick" wx:key="index"
+      data-modelid="{{item.modelId}}" data-styleid="{{item.styleId}}" data-stylefullname="{{item.styleFullName}}"
+      data-price="{{item.price}}">
+      <view class="modelsSale_sty2_tit">{{item.styleFullName}}</view>
+      <view class="modelsSale_sty2_box">
+        <view class="modelsSale_sty2_left">厂商指导价：{{item.price}}万</view>
+        <view class="modelsSale_sty2_right">询底价</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="pageBody_bottom">
+    <view class="pageBody_butleft" bindtap="shareClick">
+      <image class="addressIconsty1" src="{{oss_url}}/share1.png"></image>
+      <text class="pageBody_butleft_tit">分享</text>
+    </view>
+    <view bindtap="testDrive" class="pageBody_but pageBody_but1">预约试驾</view>
+    <view bindtap="askPrice" class="pageBody_but pageBody_but2">询底价</view>
+  </view>
+  <van-cell title="分享" bind:click="onClick" />
+  <van-share-sheet show="{{ showShare }}" title="立即分享给好友" options="{{ options }}" bind:select="onSelect"
+    bind:close="onClose" />
+  <van-toast id="van-toast" />
+  <!-- 回到顶部 -->
+  <rigth-operate top="{{isOperate}}" />
+</view>

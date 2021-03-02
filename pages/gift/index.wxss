@@ -1,0 +1,63 @@
+.main {
+  padding-top: 20rpx;
+}
+
+.gift {
+  color: #43425D;
+  padding: 30rpx 40rpx;
+  padding-bottom: 0;
+  border-bottom: 11rpx solid #F5F6FA;
+}
+
+.gift_title {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  height: 32rpx;
+  padding-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.gift_time {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 28rpx;
+  padding-bottom: 20rpx;
+}
+
+.gift_address {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 28rpx;
+  color: #A5A4BF;
+  margin-bottom: 30rpx;
+}
+
+.gift image {
+  display: block;
+  width: 670rpx;
+  height: 212rpx;
+  border-radius: 8rpx;
+  margin-bottom: 30rpx;
+}
+
+.top {
+  background: linear-gradient(315deg, #ED1A21 0%, #FA564C 100%);
+  height: 120rpx;
+}
+
+.location {
+  color: #43425D;
+  font-size: 28rpx;
+  background: #F5F6FA;
+  line-height: 60rpx;
+  height: 60rpx;
+}
+
+.location image {
+  height: 28rpx;
+  width: 28rpx;
+  margin-left: 40rpx;
+  vertical-align: middle;
+  margin-top: -6rpx;
+  font-weight: 400;
+}

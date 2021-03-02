@@ -1,16 +1,62 @@
 {
   "pages": [
-    "pages/cart/ranking/index",
-    "pages/cart/series/index",
-    "pages/cart/brand/index",
-    "pages/cart/carStyle/index",
-    "pages/cart/pk/index"
+    "pages/main/home/index",
+    "pages/main/chooseACity/index",
+    "pages/main/askFloorPrice/index",
+    "pages/main/activityCourtesy/index",
+    "pages/main/dealerList/index",
+    "pages/main/modelDetails/index",
+    "pages/mine/index",
+    "pages/mine/activity/index",
+    "pages/mine/gift/index",
+    "pages/gift/index",
+    "pages/gift/show/index",
+    "pages/gift/join/index",
+    "pages/main/trainDetails/index",
+    "pages/main/testDrive/index",
+    "pages/mine/agreement/index",
+    "pages/main/sharePage/index",
+    "pages/main/sharePage/shareActivity/index"    
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "授权后将有机会获得精品豪礼~"
+    }
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "mp-navigation-bar": "weui-miniprogram/navigation-bar/navigation-bar"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "万友",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "color": "#7D7D7D",
+    "selectedColor": "#F04442",
+    "list": [
+      {
+        "pagePath": "pages/main/home/index",
+        "text": "首页",
+        "iconPath": "/images/tab_bar_ico_1.png",
+        "selectedIconPath": "/images/tab_bar_ico_1_hover.png"
+      },
+      {
+        "pagePath": "pages/gift/index",
+        "text": "有礼",
+        "iconPath": "/images/tab_bar_ico_3.png",
+        "selectedIconPath": "/images/tab_bar_ico_3_hover.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "/images/tab_bar_ico_4.png",
+        "selectedIconPath": "/images/tab_bar_ico_4_hover.png"
+      }
+    ]
+  },
+  "plugins": {},
   "sitemapLocation": "sitemap.json"
-} 
+}

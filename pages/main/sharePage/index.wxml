@@ -1,0 +1,12 @@
+<!-- <painter palette="{{palette}}" bind:imgOK="onImgOK" /> -->
+<!-- <image mode="widthFix" src="{{shareImg}}" bindtap="previewImg" /> -->
+<!--  wx:if="{{shareImg}}" -->
+<view>
+  <view class='top'>
+    <view class='sell_title'>页面跳转中。。。</view>
+    <!-- <view class='sell_title'>快快分享给好友吧！</view> -->
+  </view>
+  <!-- <image class="sell_banner" src="{{oss_url}}/jzxd/sell_index2.png" wx:if="{{status == 1}}"></image>
+  <button class='share' open-type='share'>选择好友</button>
+  <navigator open-type="exit" target="miniProgram" class='go_back'>取消分享</navigator> -->
+</view>

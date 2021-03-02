@@ -1,0 +1,336 @@
+view,
+text {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.nearby-shop-swiper {
+  height: 200rpx;
+}
+
+.navbar-wrap {
+  width: 100%;
+}
+
+.navbar-wrap .column {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40rpx;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar-wrap .column.fixed {
+  position: fixed;
+}
+
+/* 以下的代码不重要 */
+
+.navbar-wrap .column .block {
+  width: 25%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.navbar-wrap .column .block::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.navbar-wrap .column .block.active {
+  color: #1490ce;
+  font-weight: bold;
+}
+
+.navbar-wrap .column .block.active::after {
+  background: linear-gradient(160deg, rgba(8, 220, 230, 0.7) 10%, rgba(0, 140, 255, 0.7) 90%);
+}
+
+/* pages/main/trainDetails/index.wxss */
+.pageBody {
+  background: #F5F6FA;
+  margin-bottom: 130rpx;
+
+}
+
+.pageBody_bottom {
+  position: fixed;
+  display: flex;
+  z-index: 99;
+  bottom: 0;
+  height: 126rpx;
+  line-height: 92rpx;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 3px 0px 10px rgba(158, 161, 171, 0.09);
+  opacity: 1;
+  padding: 16rpx 40rpx;
+}
+
+.pageBody_butleft {
+  width: 140rpx;
+  padding-top: 20rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.pageBody_butleft_tit {
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 40rpx;
+  color: #43425D;
+  opacity: 0.7;
+}
+
+.addressIconsty1 {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.pageBody_but {
+  width: 260rpx;
+  text-align: center;
+  opacity: 1;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+}
+
+.pageBody_but1 {
+  border: 2rpx solid #F02529;
+  color: #F02529;
+  margin-right: 8rpx;
+}
+
+.pageBody_but2 {
+  background: linear-gradient(90deg, #F02529 0%, #F02529 100%);
+  color: #FFFFFF;
+}
+
+.imgBox {
+  position: relative;
+}
+
+.chooseAcityName {
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #F02529;
+  opacity: 1;
+  border-radius: 28rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 30rpx;
+  right: 40rpx;
+}
+
+.chooseAcityName text{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.addressIcon {
+  width: 22rpx;
+  height: 22rpx;
+  position: absolute;
+  top: 8rpx;
+  left: 16rpx;
+}
+
+.addressName {
+
+  font-size: 24rpx;
+  font-weight: 400;
+  position: absolute;
+  left: 48rpx;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.addressIconsty2 {
+  width: 52rpx;
+  height: 52rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 18rpx;
+}
+
+.keyWordBox {
+  background: #FFFFFF;
+  clear: both;
+  padding-left: 40rpx;
+  margin-bottom: 12rpx;
+}
+
+.keyWordBox_toptit {
+  font-size: 24rpx;
+  line-height: 64rpx;
+  height: 64rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #43425D;
+  opacity: 0.7;
+
+}
+
+.keyWordBox_wordSty {
+  min-width: 60rpx;
+  height: 50rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 28rpx;
+  color: #43425D;
+  opacity: 1;
+  background: #F5F6FA;
+  opacity: 1;
+  float: left;
+  padding: 10rpx 18rpx;
+  margin-right: 24rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.stateBox {
+  background: #FFFFFF;
+  height: 165rpx;
+  padding: 20rpx 0;
+}
+
+.stateBox_tit {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #43425D;
+}
+
+.addressIcon2 {
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.activityMapBox_img {
+  height: 200rpx;
+}
+
+.activityMapBox {
+  height: 230rpx;
+  text-align: center;
+  padding: 10rpx 60rpx;
+  background: white;
+}
+
+.modelsSale {
+  background: #FFFFFF;
+  padding: 22rpx;
+  padding-bottom: 130rpx;
+}
+
+.modelsSale_tit {
+  font-size: 32rpx;
+  font-weight: 600;
+  line-height: 54rpx;
+  color: #43425D;
+  opacity: 1;
+}
+
+.modelsSale_scroll {
+  height: 1000rpx;
+  overflow-y: scroll;
+}
+
+.modelsSale_box {
+  background: #ffffff;
+  padding: 0 40rpx;
+  margin-bottom: 170rpx;
+}
+
+.modelsSale_sty1 {
+  background: #F5F6FA;
+  font-size: 22rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-left: 20rpx;
+  color: #43425D;
+}
+
+.modelsSale_sty2 {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #D7D7E9;
+}
+
+.modelsSale_sty2_tit {
+  font-size: 28rpx;
+  font-weight: 600;
+  line-height: 28rpx;
+  color: #1A1A1A;
+  margin-bottom: 16rpx;
+}
+
+.modelsSale_sty2_box {
+  display: flex;
+  height: 28rpx;
+  line-height: 28rpx;
+  justify-content: space-between;
+}
+
+.modelsSale_sty2_left {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #43425D;
+  opacity: 0.7;
+}
+
+.modelsSale_sty2_right {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #F02529;
+  opacity: 0.7;
+}
+
+.gift {
+  color: #43425D;
+  padding: 30rpx 40rpx;
+  padding-bottom: 0;
+}
+
+.gift image {
+  display: block;
+  width: 670rpx;
+  height: 212rpx;
+  border-radius: 8rpx;
+}
+
+/*给父元素添加类clearfix*/
+.clearfix:after {
+  content: ".";
+  /* 这里尽量写点内容，否则在IE6-7会出现间隙 */
+  display: block;
+  /* 转换为块级元素 */
+  height: 0;
+  /* 高度为0 */
+  clear: both;
+  /* 清除浮动 */
+  visibility: hidden;
+  /* 隐藏盒子 */
+}

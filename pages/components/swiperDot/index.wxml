@@ -1,0 +1,10 @@
+<!--pages/components/swiperDot/index.wxml-->
+<view>
+  <view class="dot-group">
+    <view class="dot-item {{ item === activeIndex ? 'active' : ''}}" wx:for="{{dotLength}}" wx:key="index">
+      <view class="dot">
+        <view class="dot-color-block" style="background-color: {{color || '#F2F1F6'}}"></view>
+      </view>
+    </view>
+  </view>
+</view>

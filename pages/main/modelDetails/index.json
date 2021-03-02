@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "车型详情",
+  "usingComponents": {
+    "mp-navigation-bar": "weui-miniprogram/navigation-bar/navigation-bar",
+    "rigth-operate": "/pages/components/rigthOperate/index",
+    "mp-tabbar": "weui-miniprogram/tabbar/tabbar"
+  },
+  "navigationStyle": "custom"
+}

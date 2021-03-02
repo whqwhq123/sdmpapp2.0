@@ -14,6 +14,10 @@ button::after {
   border: none;
 }
 
+.clear {
+  clear: both;
+}
+
 /* 适配iPhoneX */
 .fix-iphonex-button {
   bottom: 66rpx !important;

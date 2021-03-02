@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-index-bar": "@vant/weapp/index-bar/index",
+    "van-index-anchor": "@vant/weapp/index-anchor/index",
+    "mp-tabbar": "weui-miniprogram/tabbar/tabbar"
+  },
+  "navigationStyle": "custom"
+}

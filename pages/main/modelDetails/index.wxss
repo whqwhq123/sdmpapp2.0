@@ -1,0 +1,168 @@
+/* pages/main/modelDetails/index.wxss */
+.pageBody {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 30rpx;
+}
+
+.carBox {
+  width: 100%;
+  position: relative;
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.carImg {
+  width: 294rpx;
+  height: 190rpx;
+  margin-right: 10rpx;
+}
+
+.carInfo {
+  flex: 1;
+  position: relative;
+  color: #43425D;
+  font-size: 24rpx;
+  font-weight: 400;
+}
+
+.carName {
+  font-size: 28rpx;
+  line-height: 48rpx;
+  height: 96rpx;
+  color: #1A1A1A;
+}
+
+.carPrice {
+  opacity: 0.7;
+  line-height: 44rpx;
+  visibility: hidden;
+}
+
+.carOriginalPrice {
+  line-height: 44rpx;
+}
+
+.carOriginalPrice text {
+  color: #F02529;
+}
+
+.actImgBox {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.activityImg {
+  width: 670rpx;
+  height: 212rpx;
+}
+
+.dealerList_box {
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.dealer_tit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  font-weight: 500;
+  /* line-height: 54px; */
+  color: #43425D;
+}
+
+.chooseAcityName {
+  padding-left: 40rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+.addressIcon {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -2rpx;
+}
+
+.dealer_box {
+  width: 100%;
+  padding: 30rpx 0 98rpx 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #D7D7E9;
+  position: relative;
+}
+
+.dealerName {
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 54rpx;
+  color: #43425D;
+}
+
+.dealerAddress {
+  font-size: 20rpx;
+  font-weight: 400;
+  line-height: 28rpx;
+  color: #43425D;
+  opacity: 0.7;
+}
+
+.btnBox {
+  width: 328rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  position: absolute;
+  right: 0;
+  bottom: 14rpx;
+  display: flex;
+}
+
+.btn {
+  flex: 1;
+  font-size: 28rpx;
+  color: #F02529;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn_left {
+  border: 2rpx solid #F02529;
+  border-radius: 34rpx 0 0 34rpx;
+}
+
+.btn_rigth {
+  color: #fff;
+  background: #F02529;
+  border-radius: 0 34rpx 34rpx 0;
+}
+
+.telIcon {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  position: relative;
+  top: -4rpx;
+  margin-right: 8rpx;
+}
+
+.gift {
+  width: 670rpx;
+  height: 212rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}
+
+.gift image {
+  width: 670rpx;
+  height: 212rpx;
+  display: block;
+  border-radius: 8rpx;
+}

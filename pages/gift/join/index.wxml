@@ -1,0 +1,58 @@
+<view class="submit">
+  <view class="join" bindtap="submit">提交</view>
+</view>
+<mp-navigation-bar title="报名" background="#fff"></mp-navigation-bar>
+<view class="top">
+  <view class="gift_title">{{content['activityName']}}</view>
+  <view class="gift_time">{{content['startTime']}}至{{content['endTime']}}</view>
+  <view class="gift_address">{{content['activityCity']}}{{content['activityArea']}}{{content['areaDetail']}}</view>
+</view>
+<view class="bottom">
+  <view class="form">
+    <view class="form_left">称呼</view>
+    <view class="form_right">
+      <input maxlength="5" bindinput='form_name_change' value='{{username}}'/>
+    </view>
+  </view>
+  <view class="form">
+    <view class="form_left">手机号</view>
+    <view class="form_right" wx:if="{{phone == '' && reject == 0}}">
+      <button class="get_phone" open-type="getPhoneNumber" bindgetphonenumber="get_phone"></button>
+    </view>
+    <view class="form_right" wx:else>
+      <input type="number" maxlength="11" bindinput='form_phone_change' value='{{phone}}'/>
+    </view>
+  </view>
+  <view class="form">
+    <view class="form_left">参与活动男性人数</view>
+    <view class="form_right">
+      <image src="{{oss_url}}/gift_join_ico_1.png" wx:if="{{num[0] == 0}}"></image>
+      <image bindtap="change_num" data-index="0" data-type="0" src="{{oss_url}}/gift_join_ico_2.png" wx:else></image>
+      <view class="form_num">{{num[0]}}</view>
+      <image bindtap="change_num" data-index="0" data-type="1" src="{{oss_url}}/gift_join_ico_3.png"></image>
+    </view>
+  </view>
+  <view class="form">
+    <view class="form_left">参与活动女性人数</view>
+    <view class="form_right">
+      <image src="{{oss_url}}/gift_join_ico_1.png" wx:if="{{num[1] == 0}}"></image>
+      <image bindtap="change_num" data-index="1" data-type="0" src="{{oss_url}}/gift_join_ico_2.png" wx:else></image>
+      <view class="form_num">{{num[1]}}</view>
+      <image bindtap="change_num" data-index="1" data-type="1" src="{{oss_url}}/gift_join_ico_3.png"></image>
+    </view>
+  </view>
+  <view class="form">
+    <view class="form_left">参与活动儿童人数</view>
+    <view class="form_right">
+      <image src="{{oss_url}}/gift_join_ico_1.png" wx:if="{{num[2] == 0}}"></image>
+      <image bindtap="change_num" data-index="2" data-type="0" src="{{oss_url}}/gift_join_ico_2.png" wx:else></image>
+      <view class="form_num">{{num[2]}}</view>
+      <image bindtap="change_num" data-index="2" data-type="1" src="{{oss_url}}/gift_join_ico_3.png"></image>
+    </view>
+  </view>
+  <view class="remark">
+    备注
+    <textarea bindinput='form_remark_change' value='{{remark}}'/>
+  </view>
+</view>
+<rigth-operate top="{{isOperate}}" />

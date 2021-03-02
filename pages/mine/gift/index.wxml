@@ -1,0 +1,14 @@
+<mp-navigation-bar title="我的礼品" background="#fff"></mp-navigation-bar>
+<view class="main">
+  <view class="gift" wx:for="{{list}}" wx:key="index" wx:for-item="value" bindtap="to_show"
+    data-id="{{value['activityId']}}">
+    <view class="gift_title">{{value['activityName']}}</view>
+    <view class="gift_time">{{value['startTime']}}至{{value['endTime']}}</view>
+    <view class="gift_address">{{value['activityCity']}}{{value['activityArea']}}{{value['areaDetail']}}</view>
+    <swiper class="nearby-shop-swiper" wx:if="{{value['swiper'].length > 0}}">
+      <swiper-item wx:for="{{value['swiper']}}" wx:key="index_swiper" wx:for-item="value_swiper">
+        <image src="{{value_swiper}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

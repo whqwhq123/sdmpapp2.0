@@ -1,0 +1,8 @@
+<!-- <view> -->
+  <!-- <solt></solt> -->
+  <view class="rigthOperate">
+    <image class="iconImg" bindtap="_goHome" src="{{oss_url}}/goHome.png"></image>
+    <image class="iconImg" bindtap="_goTop" src="{{oss_url}}/top_icon.png" wx:if="{{top_use}}"></image>
+    <image class="iconImg" bindtap="_goTop" src="{{oss_url}}/top_icon.png" wx:else style="visibility: hidden;"></image>
+  </view>
+<!-- </view> -->

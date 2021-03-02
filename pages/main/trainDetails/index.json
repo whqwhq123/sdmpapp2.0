@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "rigth-operate": "/pages/components/rigthOperate/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "swiper-dot": "/pages/components/swiperDot/index"
+  },
+  "component": true,
+  "onReachBottomDistance":100
+}

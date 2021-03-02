@@ -1,0 +1,45 @@
+<!--pages/mine/index.wxml-->
+<view class="main" style="background-image:url({{oss_url}}/mine_top.png)">
+  <mp-navigation-bar title="我的" back="{{false}}" color="white"  show="{{navigation_show}}" animated="{{true}}" ></mp-navigation-bar>
+  <view class="top" wx:if="{{user_info['nickName'] && user_info['avatarUrl']}}">
+    <image src="{{user_info['avatarUrl']}}"></image>
+    <button class="top_user">{{user_info['nickName']}}</button>
+  </view>
+  <view class="top" wx:else>
+    <image src="{{oss_url}}/user_avatar.png"></image>
+    <button class="top_user" open-type="getUserInfo" bindgetuserinfo="get_user_info">未登录</button>
+  </view>
+
+  <view class="mine_content">
+    <view class="center">
+      <view class="center_content" bindtap="please_wait">
+        <image src="{{oss_url}}/mine_ico_1.png"></image>
+        <text>询价单</text>
+      </view>
+      <view class="center_content" bindtap="please_wait">
+        <image src="{{oss_url}}/mine_ico_2.png"></image>
+        <text>试驾单</text>
+      </view>
+      <view class="center_content" bindtap="to_activity">
+        <image src="{{oss_url}}/mine_ico_3.png"></image>
+        <text>我的活动</text>
+      </view>
+      <view class="center_content" bindtap="to_gift">
+        <image src="{{oss_url}}/mine_ico_4.png"></image>
+        <text>我的礼品</text>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="title">活动有礼</view>
+      <view class="gift">
+        <block wx:for="{{list}}" wx:key="index" wx:for-item="value">
+          <swiper class="nearby-shop-swiper" wx:if="{{value['swiper'].length > 0}}" bindtap="to_show" data-id="{{value['activityId']}}">
+            <swiper-item wx:for="{{value['swiper']}}" wx:key="index_swiper" wx:for-item="value_swiper">
+              <image src="{{value_swiper}}"></image>
+            </swiper-item>
+          </swiper>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

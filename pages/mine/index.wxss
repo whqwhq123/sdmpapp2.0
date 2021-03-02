@@ -1,0 +1,95 @@
+.main {
+  background: no-repeat;
+  background-size: 750rpx 392rpx;
+}
+
+.top {
+  display: flex;
+  margin-top: 36rpx;
+}
+
+.top image {
+  width: 112rpx;
+  height: 112rpx;
+  margin-left: 74rpx;
+  border-radius: 50vw;
+}
+
+.top_user {
+  margin-left: 30rpx;
+  line-height: 112rpx;
+  font-size: 36rpx;
+  color: #fff;
+  font-weight: 500;
+  background: none;
+  width: 300rpx;
+  margin: 0;
+  text-align: left;
+}
+
+.mine_content {
+  width: 670rpx;
+  margin: 0 auto;
+}
+
+.center {
+  margin-top: 30rpx;
+  background: #fff;
+  height: 164rpx;
+  background: #FFFFFF;
+  box-shadow: 0rpx 6rpx 12rpx rgba(158, 161, 171, 0.09);
+  border-radius: 20rpx;
+  display: flex;
+}
+
+.center_content {
+  width: 25%;
+  text-align: center;
+}
+
+.center_content {
+  text-align: center;
+  color: #43425D;
+  font-size: 24rpx;
+  padding-top: 40rpx;
+}
+
+.center_content text {
+  display: block;
+  line-height: 24rpx;
+  height: 24rpx;
+  margin-top: 12rpx;
+}
+
+.center_content image {
+  width: 48rpx;
+  height: 48rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  width: 128rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #43425D;
+}
+
+.bottom {
+  padding-top: 60rpx;
+}
+
+.gift {
+  width: 670rpx;
+  margin-top: 30rpx;
+  height: 212rpx;
+}
+
+.gift image {
+  width: 670rpx;
+  height: 212rpx;
+  display: block;
+  border-radius: 8rpx;
+}

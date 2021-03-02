@@ -1,4 +1,5 @@
 .DS_Store
+miniprogram_npm
 node_modules
 dist
 project.config.json

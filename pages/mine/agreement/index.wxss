@@ -1,0 +1,10 @@
+.content{
+  padding: 40rpx;
+}
+
+.content text{
+  display: block;
+  text-indent: 2em;
+  padding: 12rpx 0;
+  font-size: 30rpx;
+}

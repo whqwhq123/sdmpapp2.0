@@ -1,0 +1,209 @@
+/* pages/mine/index.wxss */
+
+.main {
+  background: no-repeat;
+  background-size: 750rpx 300rpx;
+}
+
+.search {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 1rpx solid white;
+  border-radius: 35rpx;
+  padding-left: 10rpx;
+}
+
+.search input {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.van-search__content {
+  background: none;
+  border: 1rpx solid white;
+}
+
+.addressIcon {
+  width: 18rpx;
+  height: 18rpx;
+  margin-left: 10rpx;
+}
+
+.top {
+  padding: 10rpx 30rpx 10rpx;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.change-city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180rpx;
+}
+
+.change-city {
+  font-size: 30rpx;
+}
+
+.mar {
+  height: 16rpx;
+  background: #F5F6FA;
+}
+
+.title {
+  padding: 30rpx 40rpx 0;
+  font-size: 32rpx;
+  color: #43425D
+}
+
+.brand-list {
+  margin-top: 35rpx;
+  padding: 30rpx 0;
+  height: 292rpx;
+  background: #fff
+}
+
+.hotcar-list {
+  padding: 10rpx 30rpx;
+  /* height: 420rpx; */
+}
+
+.brand-list,
+.hotcar-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.brand-list .brand {
+  text-align: center;
+  width: 20%;
+  margin-bottom: 20rpx;
+}
+
+.brand-list image {
+  width: 72rpx;
+  height: 54rpx;
+  margin-top: 9rpx;
+}
+
+.brand-list image,
+.brand view {
+  flex: 1;
+  font-size: 24rpx;
+}
+
+.hotcar-list .cars {
+  width: 33.333%;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 37rpx;
+}
+
+.hotcar-list image {
+  width: 148rpx;
+  height: 135rpx;
+}
+
+.hotcar-list .cars view {
+  color: #F02529
+}
+
+.wrapper {
+  width: 80%;
+  height: 90%;
+  background: white;
+  float: right;
+  margin-top: 20%;
+}
+
+.wrapper .brand-name {
+  width:100%;
+  padding: 14rpx 20rpx;
+  background: #F5F6FA;
+  font-size: 28rpx;
+}
+
+.car-list .car-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20rpx 0;
+  color: #43425D;
+  flex-wrap:wrap;
+}
+.car-list .car-item .subCar{
+  width:100%;
+  display: flex;
+  padding: 20rpx;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 0.5rpx solid #D7D7E9;
+}
+
+.car-list .car-item image {
+  width: 200rpx;
+  height: 160rpx;
+  margin-right: 30rpx;
+}
+
+.gift {
+  width: 670rpx;
+  margin: 40rpx;
+  height: 212rpx;
+}
+
+.gift image {
+  width: 670rpx;
+  height: 212rpx;
+  display: block;
+  border-radius: 8rpx;
+}
+
+.van-tab {
+  font-size: 32rpx;
+}
+
+/* .van-search__content{
+  background: none;
+} */
+
+.car-model-tabs{
+  width: 100%;
+  height: 98%;
+  position: relative;
+  z-index: 9999;
+}
+.van-tabs__line{
+  width:43rpx;
+  background-color:#FA5151;
+}
+.car-model-title{
+  font-size: 28rpx;
+ font-weight: 600;
+}
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .van-tab--active{
+  font-size: 32rpx;
+  font-weight:600;
+} */
+.tabs view {
+  flex: 1;
+  text-align: center;
+  padding: 14rpx;
+  color:#43425D;
+  font-size: 28rpx;
+}
+

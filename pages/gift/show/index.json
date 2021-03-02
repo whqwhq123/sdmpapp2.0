@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
+    "rigth-operate": "/pages/components/rigthOperate/index"
+  },
+  "navigationStyle": "custom"
+}

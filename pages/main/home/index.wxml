@@ -1,0 +1,103 @@
+<!--pages/mine/index.wxml-->
+<view class="main" style="background-image:url({{oss_url}}/mine_top.png)">
+  <mp-navigation-bar title="万友" back="{{false}}" show="{{navigation_show}}" animated="{{true}}" color="white"></mp-navigation-bar>
+  <view class="top">
+    <view class="change-city" bindtap="chooseCity">
+      <text>{{currentCity}}</text>
+      <image class="addressIcon" src="{{oss_url}}/down_icon.png"></image>
+    </view>
+    <!-- <van-search
+      v-model="value"
+      shape="round"
+      background=""
+      placeholder="请输入搜索关键词"
+      style="width:590rpx;background:none"
+    /> -->
+    <view class="search">
+      <mp-icon icon="search" color="white" size="{{23}}" style="margin-top: -3rpx"></mp-icon>
+      <input type="text" placeholder="请输入搜索关键词" placeholder-style="color:white" />
+    </view>
+  </view>
+  <view class="brand-list">
+    <view wx:for="{{brandList}}" wx:key="index" class="brand" bindtap="showSaleCars" data-makename="{{item.makeName}}" data-makeid="{{item.makeId}}">
+      <image src="{{item.ossUrl}}"></image>
+      <view style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;" wx:if="{{item.makeName!=null}}">{{item.makeName}}</view>
+    </view>
+  </view>
+  <view class="mar"></view>
+  <view class="title">热销车推荐</view>
+  <view class="hotcar-list">
+    <view wx:for="{{hotCarList}}" wx:key="index" class="cars" bindtap="goDetails"
+    data-ossUrl="{{item.ossUrl}}" 
+    data-price="{{item.minPrice}}" data-modelName="{{item.modelName}}" data-modelId="{{item.modelId}}">
+      <image src="{{item.ossUrl}}"></image>
+      <view style="color:#1A1A1A">{{item.modelName}}</view>
+      <view>{{item.minPrice}}万</view>
+    </view>
+  </view>
+  <view class="mar"></view>
+  <block wx:for="{{list_gift}}" wx:key="index" wx:for-item="value" wx:if="{{value['swiper'].length > 0}}">
+    <view class="gift">
+      <swiper class="nearby-shop-swiper" bindchange="swiperChange">
+        <swiper-item wx:for="{{value['swiper']}}" wx:key="index_swiper" wx:for-item="value_swiper" bindtap="to_show" data-id="{{value['activityId']}}">
+          <image src="{{value_swiper}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <swiper-dot dotLength="{{list_gift.length}}" activeIndex="{{currentIndex}}" style="margin-top: -30rpx;"></swiper-dot>
+    <view class="mar"></view>
+  </block>
+</view>
+<!-- bindtap="hideOverlay" -->
+<van-overlay show="{{show}}" lock-scroll="true" class="car-model-tabs" bind:tap="hideOverlay">
+  <scroll-view scroll-y="true" class="wrapper">
+    <view class="content">
+      <!-- <view class="tabs">
+        <view wx:for="{{tabsTitle}}" wx:key="index">
+          <view class="active">
+            {{item}}
+            <text class="line"></text>
+          </view>
+        </view>
+      </view> -->
+      <van-tabs wx:if="{{tabShow}}" active="activeName" line-width="43rpx" catch:tap="saleData">
+        <van-tab title="在售" name="sale" style="font-size:32rpx;color:#43425D" tab-active-class="van-tab--active" id="{{activeName}}">
+          <view class="car-list">
+            <view class="car-item" wx:for="{{carModelList}}" wx:key="index">
+              <view class="brand-name">{{item.groupName}}</view>
+              <view class="subCar" wx:for="{{item.list}}" wx:key="index" bindtap="goDetails" data-ossUrl="{{item.ossUrl}}" 
+              data-price="{{item.minPrice}}" data-modelName="{{item.modelName}}" data-modelId="{{item.modelId}}">
+                <image src="{{item.ossUrl}}"></image>
+                <view>
+                  <view style="font-size:32rpx;margin-bottom:16rpx">{{item.modelName}}</view>
+                  <view>
+                    <text style="margin-right:20rpx">指导价</text>
+                    <text style="color:#F02529">{{item.minPrice}}万</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </van-tab>
+        <van-tab title="未售/停售" name="noSale" id="{{activeName}}">
+          <view class="car-list">
+            <view class="car-item" wx:for="{{carModelList}}" wx:key="index">
+              <view class="brand-name">{{item.groupName}}</view>
+              <view class="subCar" wx:for="{{item.list}}" wx:key="index" bindtap="goDetails" data-ossUrl="{{item.ossUrl}}" 
+              data-price="{{item.minPrice}}" data-modelName="{{item.modelName}}" data-modelId="{{item.modelId}}">
+                <image src="{{item.ossUrl}}"></image>
+                <view>
+                  <view style="font-size:32rpx;margin-bottom:16rpx">{{item.modelName}}</view>
+                  <view>
+                    <text style="margin-right:20rpx">指导价</text>
+                    <text style="color:#F02529">{{item.minPrice}}万</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </van-tab>
+      </van-tabs>
+    </view>
+  </scroll-view>
+</van-overlay>
